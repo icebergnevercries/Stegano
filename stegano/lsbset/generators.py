@@ -144,3 +144,10 @@ def log_gen() -> Iterator[int]:
         adder = max(1, math.pow(10, int(math.log10(y))))
         yield int(y)
         y = y + int(adder)
+
+def mymet() -> Iterator[int]:
+    y = 1
+    while True:
+        yield y
+        y = y + 10
+
